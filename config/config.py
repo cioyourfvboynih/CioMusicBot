@@ -83,7 +83,6 @@ AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "1400")
 )  # Remember to give value in Seconds
 
-
 MUST_JOIN = getenv("MUST_JOIN", "whycio")
 
 # Time after which bot will suggest random chats about bot commands.
